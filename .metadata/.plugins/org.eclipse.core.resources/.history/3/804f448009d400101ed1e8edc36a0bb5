@@ -1,0 +1,14 @@
+package cust_mgt;
+
+public class Customer extends Person {
+	
+	protected String email;
+	protected String address;
+	
+	public Customer() {
+		super();
+		this.email = "";
+		this.address = "";
+	}
+	
+}

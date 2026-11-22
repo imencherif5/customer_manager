@@ -1,0 +1,20 @@
+package cust_mgt;
+
+public abstract class Person {
+	protected int id;
+	protected String name;
+	protected int phone;
+	
+	
+	public Person() {
+		this.id = 0;
+		this.name = "";
+		this.phone = 0;
+	}
+	
+	public Person(int id,String name,int phone) {
+		this.id = id;
+		this.name = name;
+		this.phone = phone;
+	}
+}

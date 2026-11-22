@@ -1,0 +1,14 @@
+package cust_mgt;
+
+public class CustomerService {
+	
+	private Customer[] customers;
+	private int count = 0;
+	
+	public void addCustomer(Customer c) {
+		
+		if(count < customers.length) {
+			customers[count] = c;
+		}
+	}
+}

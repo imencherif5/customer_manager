@@ -1,0 +1,47 @@
+package cust_mgt;
+
+public class Customer extends Person {
+	
+	protected String email;
+	protected String address;
+	
+	public Customer() {
+		super();
+		this.email = "";
+		this.address = "";
+	}
+	
+	public Customer(int id,String name,int phone,String email,String address) {
+		super(id,name,phone);
+		this.email = email;
+		this.address = address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	public String Role() {
+		return "customer";
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() +"email=" + email + ", address=" + address + ", Role()=" + Role() + "]";
+	}
+	
+	
+	
+}

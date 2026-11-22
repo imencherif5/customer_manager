@@ -1,0 +1,14 @@
+package cust_mgt;
+
+public class VIPCustomer extends Customer {
+	
+	private int points;
+	private double dicountRate;
+	
+	public VIPCustomer() {
+		super();
+		this.points = 0;
+		this.dicountRate = 0.0;
+		
+	}
+}

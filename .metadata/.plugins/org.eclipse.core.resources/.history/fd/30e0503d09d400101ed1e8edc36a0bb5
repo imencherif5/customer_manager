@@ -1,0 +1,5 @@
+package cust_mgt;
+
+public class Customer {
+
+}

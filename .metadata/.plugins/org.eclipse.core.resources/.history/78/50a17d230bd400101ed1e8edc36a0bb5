@@ -1,0 +1,45 @@
+package cust_mgt;
+
+public class VIPCustomer extends Customer {
+	
+	private int points;
+	private double dicountRate;
+	
+	public VIPCustomer() {
+		super();
+		this.points = 0;
+		this.dicountRate = 0.0;
+	}
+	
+	public VIPCustomer(int id,String name,int phone,String email,String address,int points,double discountRate) {
+		super(id,name,phone,email,address);
+		this.points = points;
+		this.dicountRate = discountRate;
+	}
+
+	public int getPoints() {
+		return points;
+	}
+
+	public void setPoints(int points) {
+		this.points = points;
+	}
+
+	public double getDicountRate() {
+		return dicountRate;
+	}
+
+	public void setDicountRate(double dicountRate) {
+		this.dicountRate = dicountRate;
+	}
+	
+	public String getRole() {
+		return "VIP Customer";
+	}
+
+	public String toString() {
+		return super.toString() + "points=" + points + ", dicountRate=" + dicountRate + "%" + "role=" + Role() + "]";
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+package cust_mgt;
+import java.util.Scanner;
+
+public class menu {
+
+	private CustomerService custSv = new CustomerService();
+}
